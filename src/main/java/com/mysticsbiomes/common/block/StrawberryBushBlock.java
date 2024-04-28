@@ -77,6 +77,7 @@ public class StrawberryBushBlock extends BushBlock implements BonemealableBlock 
      * This gets the number based from the biomes temperature and if it's on top of soil.
      */
     private float getGrowthSpeed(Level level, BlockPos pos) {
+        /*
         float temperature = level.getBiome(pos).get().getBaseTemperature();
         float brightness = level.getRawBrightness(pos.above(), 0);
         float speed = 112;
@@ -90,6 +91,8 @@ public class StrawberryBushBlock extends BushBlock implements BonemealableBlock 
         BlockState belowState = level.getBlockState(pos.below());
         boolean fertile = belowState.canSustainPlant(level, pos.below(), Direction.UP, this) && belowState.isFertile(level, pos);
         return fertile ? speed * 0.65F : speed;
+        */
+        return 112;
     }
 
     /**
